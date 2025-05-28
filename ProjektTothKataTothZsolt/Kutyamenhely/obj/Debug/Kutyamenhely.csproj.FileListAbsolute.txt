@@ -1,0 +1,7 @@
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\bin\Debug\Kutyamenhely.exe.config
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\bin\Debug\Kutyamenhely.exe
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\bin\Debug\Kutyamenhely.pdb
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\obj\Debug\Kutyamenhely.csproj.AssemblyReference.cache
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\obj\Debug\Kutyamenhely.csproj.CoreCompileInputs.cache
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\obj\Debug\Kutyamenhely.exe
+H:\pra\ASZTALI ALKALMAZAS\ObjectOP\ProjektTothKataTothZsolt\Kutyamenhely\obj\Debug\Kutyamenhely.pdb
