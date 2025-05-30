@@ -25,17 +25,44 @@ namespace Kutyamenhely
             sr.Close();
         }
 
-        public Kutya Nemtudom(string valasztas)
+
+
+        public Kutya MinMax(string valasztas)
         {
             Kutya s = kutyak[0];
-            string veg = film != filmek[filmek.Count - 1] ? "," : ";";
             for (int i = 0; i < kutyak.Count; i++)
             {
-                if (kutyak[i].Kor < s.Kor)
+                if (valasztas == "max")
                 {
-                    s = kutyak[i];
+                    if (kutyak[i].IdosebbE(s))
+                    {
+                        s = kutyak[i];
+                    }
+                }
+                else if (valasztas == "min")
+                {
+                    if (!kutyak[i].IdosebbE(s))
+                    {
+                        s = kutyak[i];
+                    }
                 }
             }
+            return s;
         }
+
+        public void General(string fajlnev)
+        {
+            StreamWriter sw = new StreamWriter(fajlnev);
+            sw.WriteLine("TRUNCATE menhely;");
+            sw.WriteLine("INSERT INTO menhely(nev, kor, szobatisztaE, tulajdonsagok)");
+            sw.WriteLine("VALUES");
+            foreach (Kutya item in kutyak)
+            {
+                string veg = item != kutyak[kutyak.Count - 1] ? "," : ";";
+                sw.WriteLine(item.Ertek() + veg);
+            }
+            sw.Close();
+        }
+
     }
 }

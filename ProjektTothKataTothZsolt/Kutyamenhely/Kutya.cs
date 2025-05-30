@@ -41,6 +41,15 @@ namespace Kutyamenhely
             }
         }
 
+        public bool IdosebbE(Kutya f)
+        {
+            if (this.kor < f.kor)
+            {
+                return false;
+            }
+            else return true;
+        }
+
         public string Tulajdonsagok 
         {
             set
@@ -67,6 +76,9 @@ namespace Kutyamenhely
             return $"{nev}, {kor} eves, {SzobatisztaE}, {Tulajdonsagok}";
         }
 
-        
+        public string Ertek()
+        {
+            return $"(\"{nev}\", {kor}, \"{SzobatisztaE}\", \"{Tulajdonsagok}\")";
+        }
     }
 }
